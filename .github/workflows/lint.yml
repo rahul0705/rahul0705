@@ -25,8 +25,9 @@ jobs:
       statuses: write
 
     steps:
+      # actionlint disable pinned-action
       - name: Checkout code
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7 # zizmor: ignore[unpinned-uses]
         with:
           # super-linter needs the full git history to get the
           # list of files that changed across commits
@@ -34,7 +35,7 @@ jobs:
           persist-credentials: false
 
       - name: Super-linter
-        uses: super-linter/super-linter@v8.7.0 # x-release-please-version
+        uses: super-linter/super-linter@v8.7.0 # zizmor: ignore[unpinned-uses]
         env:
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
