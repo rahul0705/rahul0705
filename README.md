@@ -5,8 +5,8 @@ rahul@github:~$ whoami
 
 Rahul Mohandas
 
-Software Engineer
-Cloud • DevOps • Security • Open Source
+Software Engineer & Technical Leader
+Cloud • Infrastructure • Distributed Systems • Security
 ```
 
 ---
@@ -14,7 +14,7 @@ Cloud • DevOps • Security • Open Source
 ```console
 rahul@github:~$ uname -a
 
-Linux | AWS | Docker | CDK | Terraform | TypeScript | Python | Java
+Linux | AWS | Kubernetes | Docker | CDK | Terraform | TypeScript | Python | Java
 ```
 
 ---
@@ -24,14 +24,20 @@ rahul@github:~$ cat about.md
 
 Hi 👋
 
-I'm Rahul, a software engineer passionate about building reliable systems,
-automating repetitive work, and learning how things work under the hood.
+I'm Rahul, a software engineer and technical leader who enjoys building
+reliable systems, solving difficult engineering problems, and making the
+way we build software a little better.
 
-Most of my time is spent somewhere between cloud infrastructure,
-backend engineering, Linux, networking, security, and homelab projects.
+My work tends to live somewhere between cloud infrastructure, distributed
+systems, developer tooling, security, and software architecture.
 
-I enjoy solving problems with simple, maintainable solutions and firmly
-believe that the best automation is the one you never have to think about again.
+I'm still happiest close to the technology — exploring a new tool,
+automating something tedious, working through an architecture problem,
+or building something just because I'm curious how it should work.
+
+Simple systems. Maintainable solutions. Automate the boring parts.
+
+Curious by default.
 ```
 
 ---
@@ -43,12 +49,20 @@ rahul@github:~$ tree ~/projects
 ├── 🌐 personal-website/
 │   ├── Astro
 │   ├── Blog
-│   └── Portfolio
+│   ├── Resume
+│   └── GitHub Pages
+│
+├── ✏️ etch/
+│   ├── Python
+│   ├── Dotfiles
+│   ├── Automation
+│   └── Developer Tooling
 │
 ├── ☁ infrastructure/
+│   ├── AWS
+│   ├── Kubernetes
 │   ├── Terraform
 │   ├── CDK
-│   ├── Ansible
 │   └── Docker
 │
 ├── 🔧 automation/
@@ -56,14 +70,11 @@ rahul@github:~$ tree ~/projects
 │   ├── CI/CD
 │   └── Scripts
 │
-├── 🏠 homelab/
-│   ├── Networking
-│   ├── Self Hosting
-│   └── Monitoring
-│
-└── 📚 learning/
-    ├── Go
-    └── Rust
+└── 🏠 homelab/
+    ├── Linux
+    ├── Networking
+    ├── Self Hosting
+    └── Observability
 ```
 
 ---
@@ -71,15 +82,17 @@ rahul@github:~$ tree ~/projects
 ```console
 rahul@github:~$ ps aux | grep current
 
-✓ Building my portfolio with Astro
+✓ Building Etch
 
-✓ Writing technical articles
+✓ Writing about software engineering
 
-✓ Learning Go & Rust
+✓ Improving rahulmohandas.com
 
-✓ Improving my homelab
+✓ Experimenting with developer tooling
 
-✓ Contributing to Open Source
+✓ Automating things that probably didn't need to be manual
+
+✓ Tinkering with the homelab
 
 ✓ Drinking Gorilla Mind
 ```
@@ -87,13 +100,14 @@ rahul@github:~$ ps aux | grep current
 ---
 
 ```console
-rahul@github:~$ git log --oneline --author=rahul --max-count=5
+rahul@github:~$ git log --oneline --author=rahul --max-count=7
 
+feat: build tools I wish already existed
 feat: migrate portfolio to Astro
-feat: build reusable components
-feat: add blog collections
-feat: automate infrastructure
-feat: improve CI/CD
+feat: automate the repetitive parts
+refactor: simplify the architecture
+docs: write down what I learned
+chore: update dependencies again
 fix: another DNS issue...
 ```
 
@@ -109,19 +123,27 @@ toolbox
 │   ├── Java
 │   └── Bash
 │
-├── Cloud & DevOps
+├── Cloud & Infrastructure
 │   ├── AWS
+│   ├── Kubernetes
 │   ├── Docker
 │   ├── CDK
 │   ├── Terraform
 │   ├── Ansible
-│   ├── GitHub Actions
 │   └── Linux
 │
-└── Frameworks
+├── Engineering
+│   ├── Distributed Systems
+│   ├── Infrastructure as Code
+│   ├── CI/CD
+│   ├── Observability
+│   ├── Cloud Security
+│   └── GitHub Actions
+│
+└── Web
     ├── Astro
+    ├── TypeScript
     ├── React
-    ├── Next.js
     └── Node.js
 ```
 
@@ -139,14 +161,14 @@ rahul@github:~$ neofetch
              \___)=(___/
 
 Name:          Rahul Mohandas
-Role:          Software Engineer
+Role:          Software Engineer & Technical Leader
 Location:      ~/Atlanta
 Shell:         zsh
 Editor:        Vim • VS Code
-Focus:         Cloud Engineering
+Focus:         Cloud • Infrastructure • Distributed Systems
 Stack:         TypeScript • Python • Java
-Platform:      AWS
-Interests:     Linux • DevOps • Security • Networking
+Platform:      AWS • Linux • Kubernetes
+Interests:     Dev Tools • Security • Networking • Open Source
 ```
 
 ---
@@ -157,6 +179,9 @@ git reflog
 
 rahul@github:~$ alias automate
 write_a_script
+
+rahul@github:~$ alias documentation
+I'll_do_it_later
 
 rahul@github:~$ which editor
 vim
@@ -177,8 +202,11 @@ rahul@github:~$ cat ~/.config/links
 🌐  Portfolio
 https://www.rahulmohandas.com
 
-📝  Blog
+📝  Writing
 https://www.rahulmohandas.com/blog
+
+🏭  RM Industries
+https://www.rm-industries.com
 
 💼  LinkedIn
 https://linkedin.com/in/rahul0705
